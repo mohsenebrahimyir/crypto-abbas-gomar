@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="rtl"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.554">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>کریپتو به زبان ساده - جلسه اول: نگاه سرمایه گذاری صنعت کریپتو</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../references.html" rel="next">
+<link href="../intro.html" rel="prev">
+<link href=".././img/cover.jpg" rel="icon" type="image/jpeg">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "بدون نتیجه",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "کپی لینک در جستجو",
+    "search-hide-matches-text": "موارد دیگر را پنهان کنید",
+    "search-more-match-text": "مطابقت بیشتر در این سند",
+    "search-more-matches-text": "موارد منطبق بیشتر در این سند",
+    "search-clear-button-title": "پاک کردن",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "لغو",
+    "search-submit-button-title": "ارسال",
+    "search-label": "جستجو"
+  }
+}</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+
+
+
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300&amp;display=swap">
+<link rel="stylesheet" href="../assets/css/rtl-style.css">
+<link rel="stylesheet" href="../assets/css/custom.css">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="ناوبری نوار کناری را تغییر دهید" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../sessions/01.html"><span class="chapter-title">جلسه اول: نگاه سرمایه گذاری صنعت کریپتو</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="ناوبری نوار کناری را تغییر دهید" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">کریپتو به زبان ساده</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/mohsenebrahimyir/cryptocurrency-abbas-gomar/" title="منبع کد" class="quarto-navigation-tool px-1" aria-label="منبع کد"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="حالت تاریک را تغییر دهید"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="حالت خواننده را تغییر دهید">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="جستجو"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">پیش گفتار</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">مقدمه</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../sessions/01.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">جلسه اول: نگاه سرمایه گذاری صنعت کریپتو</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">منابع</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">فهرست مطالب</h2>
+   
+  <ul>
+  <li><a href="#بخش-اول-ساختار-و-ترکیب-صنعت-کریپتو" id="toc-بخش-اول-ساختار-و-ترکیب-صنعت-کریپتو" class="nav-link active" data-scroll-target="#بخش-اول-ساختار-و-ترکیب-صنعت-کریپتو">بخش اول: ساختار و ترکیب صنعت کریپتو</a></li>
+  <li><a href="#بخش-دوم-بیت-کوین-و-سایرین---فاندامنتال" id="toc-بخش-دوم-بیت-کوین-و-سایرین---فاندامنتال" class="nav-link" data-scroll-target="#بخش-دوم-بیت-کوین-و-سایرین---فاندامنتال">بخش دوم: بیت کوین و سایرین - فاندامنتال</a></li>
+  <li><a href="#بخش-سوم-بیت-کوین-اتریوم-و-سایرین---سرمایه-گذاری" id="toc-بخش-سوم-بیت-کوین-اتریوم-و-سایرین---سرمایه-گذاری" class="nav-link" data-scroll-target="#بخش-سوم-بیت-کوین-اتریوم-و-سایرین---سرمایه-گذاری">بخش سوم: بیت کوین، اتریوم و سایرین - سرمایه گذاری</a></li>
+  <li><a href="#بخش-چهارم-اتریوم-بستری-توسعه-کسب-و-کار-یا-کامودیتی" id="toc-بخش-چهارم-اتریوم-بستری-توسعه-کسب-و-کار-یا-کامودیتی" class="nav-link" data-scroll-target="#بخش-چهارم-اتریوم-بستری-توسعه-کسب-و-کار-یا-کامودیتی">بخش چهارم: اتریوم بستری توسعه کسب و کار یا کامودیتی</a></li>
+  <li><a href="#بخش-پنجم-رگولاتوری-توسعه-ابزارها-و-محافظت-از-سرمایه-عموم" id="toc-بخش-پنجم-رگولاتوری-توسعه-ابزارها-و-محافظت-از-سرمایه-عموم" class="nav-link" data-scroll-target="#بخش-پنجم-رگولاتوری-توسعه-ابزارها-و-محافظت-از-سرمایه-عموم">بخش پنجم: رگولاتوری توسعه ابزارها و محافظت از سرمایه عموم</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">جلسه اول: نگاه سرمایه گذاری صنعت کریپتو</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    <div>
+    <div class="quarto-title-meta-heading">اصلاح شده</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">2025-12-04</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="example">
+<p>ارزش صنعت کریپتو در ایران که قدمتش تقریبا ۱۰ ساله، چقدر است؟</p>
+<ul>
+<li>شرکت سیمان ۱ میلیون تنی: تقریبا ۵ همت</li>
+<li>۸۰ میلیون تن تولید کل صنعت سیمان: تقریبا ارزش صنعت ۴۰۰ همت</li>
+<li>با دلار ۱۰۰ هزارتومان: تقریبا ۴ میلیارد دلار</li>
+<li>قدمت صنعت سیمان: تقریبا ۱۰۰ سال</li>
+</ul>
+</div>
+<section id="بخش-اول-ساختار-و-ترکیب-صنعت-کریپتو" class="level2">
+<h2 class="anchored" data-anchor-id="بخش-اول-ساختار-و-ترکیب-صنعت-کریپتو">بخش اول: ساختار و ترکیب صنعت کریپتو</h2>
+<p>چهار دهه (از سال ۱۹۷۲) تلاش برای ساخت بیتکوین صورت گرفته و در دل بحران سال ۲۰۰۹ متولد شد.</p>
+<div class="definition">
+<p>peer to peer: سیستم همتا به همتا</p>
+<ul>
+<li>سیستم انتقالی که بدون نیاز به واسطه پول جابجا میشه البته به صورت دیجیتالی.</li>
+</ul>
+</div>
+<p>در بحران‌های مالی برای نجات بانک‌های ورشکسته و اقتصاد پول به جامعه تزریق می‌کند (<strong>QE</strong>: Quantitative Easing &amp; <strong>QT</strong>: Quantitative Tightening) که این چاپ پول معمولا به صورت تورم خودش رو نشون میده</p>
+<div class="proof remark">
+<p><span class="proof-title"><em>نکته</em>. </span>میانگین تورم در سال در کل دنیا حدود ۵ درصد است که هدف بانک‌های مرکزی نگهداشتن در سطح ۲ درصد است که موفق نشده‌اند.</p>
+</div>
+<p>بنابراین چاپ پول و تورم یکی از ایرادات اصلی بانک‌های مرکزی است. هزینه نقل و انتقالات بانکی زیاد است.</p>
+<div class="example">
+<p>از جمعیت ۸ میلیاردی کره زمین چند نفر دسترسی به بانک ندارند؟</p>
+<details>
+<summary>
+پاسخ:
+</summary>
+حدود ۱.۳ میلیارد نفر
+</details>
+</div>
+<p>بنابراین مشکلات سیستم مالی بانکی که باعث بوجود آمدن کریپتو شده‌اند:</p>
+<ol type="1">
+<li>بحران‌های مالی بانکی زیاد</li>
+<li>هزینه نقل و انتقال زیاد</li>
+<li>دسترسی کم</li>
+</ol>
+<p>فازهای مختلف صنعت کریپتو از سال ۲۰۰۹ تا امروز (۲۰۲۵):</p>
+<ul>
+<li>2009-2020: جنبه سرگرمی</li>
+<li>2011-2013: رشد قیمتی شدید (باعث ایجاد و توجه در دنیا)
+<ul>
+<li>شرکت‌های crypto native: شرکت‌هایی که صرفا برای کریپتو بوجود آمدن
+<ul>
+<li>kraken, coinbase &amp; …</li>
+</ul></li>
+</ul></li>
+<li>2014-2016: ورشکستگی یک صرافی/ استفاده در معاملات قاچاقچیان</li>
+<li>2008-2020: فقط داشتیم زیرساخت ایجاد میکردیم تا بتونیم ارزهای دیجیتال رو در کیف پولمون ذخیره کنیم.</li>
+<li>2020-…: شرکت‌ها و موسسه‌های سرمایه گذاری وارد صنعت کریپتو شدند.</li>
+</ul>
+<p>مسیر توسعه صنعت کریپتو در ۴ دوره چهار ساله:</p>
+<ol type="1">
+<li>2009-2014: عمدتا بیتکوین ارزش بازار صنعت بود.</li>
+<li>2014-2018: اتریوم وارد بازی شد.</li>
+<li>2018-2022: استیبل کوین‌ها مثل تتر (USDC, USDT, DAI &amp; ..) وارد شدند.</li>
+<li>2022-…: نقش سایرین بیشتر شد.</li>
+</ol>
+<div class="definition">
+<p>دسته بندی صنعت کریپتو</p>
+<ol type="1">
+<li>حفظ دارایی: بیت کوین</li>
+<li>قراردادهای هوشمند: اتریوم و سولانا</li>
+<li>استیبل کوین‌ها: USDT, USDC, DAI</li>
+<li>دیفای و توکن سازی: (خرید و فروش - تامین مالی)</li>
+</ol>
+</div>
+<div class="proof remark">
+<p><span class="proof-title"><em>نکته</em>. </span>ارزش بازار فعلی صنعت کریپتو حدود ۳ میلیارد دلار است که نصف این سهم ارزش بازار بیت کوین است.</p>
+</div>
+<div class="definition">
+<p>power law: قانون توان</p>
+<p>این قانون بیان می‌کنه هر اکوسیستم نوظهوری که شکل میگیره معمولا چندتای اصلی باقی میمونن و بقیه حذف میشن یا درهم ادغام میشن.</p>
+</div>
+<p>در ریزیش‌ها بعضی از ارزها صفر می‌شوند ولی بیت کوین ریزش داشته فقط.</p>
+<ul>
+<li>در سایت <a href="https://www.tradingview.com/markets/cryptocurrencies/prices-all/">Tradingview</a> ارزش بازار ارزهای مهم موجود است.
+<ul>
+<li>ده ارز با بیشترین ارزش بازار تشکیل دهنده‌ی اصلی صنعت کریپتو هستند.</li>
+</ul></li>
+</ul>
+<p>:ارزش بازار کل دارایی‌های دنیا (<a href="https://assetmarketcap.com/">https://assetmarketcap.com/</a>)</p>
+<ol type="1">
+<li>ملک: ۶۵٪</li>
+<li>شرکت‌ها: ۱۰٪</li>
+<li>پول: ۱۵٪</li>
+<li>بازار اوراق: ۲۰٪</li>
+<li>طلا: ۵٪</li>
+<li>کریپتو: کمتر از ۰.۵٪</li>
+</ol>
+<div class="proof remark">
+<p><span class="proof-title"><em>نکته</em>. </span>فضای کریپتو بیشتر شبیه شرکت‌های استارت آپ است تا شبیه طلا و نقره. بنابراین نمیشه تمام سرمایه را در این صنعت قرار داد. خرد جمعی دنیا حدود ۵ درصد از میزان سرمایگذاری خودشان را به این صنعت اختصاص دادند.</p>
+</div>
+<p>میزان تخصیص سرمایه:</p>
+<ul>
+<li>خرد جمعی دنیا حدود ۵ درصد</li>
+<li>با ملاحظه و احتیاط حداکثر ۱۰ درصد از سرمایه آزاد با در نظر گرفتن قانون توان در ارزهای سرمایه گذاری میکنه که احتمال بقای زیادی دارند (Top 10)</li>
+</ul>
+<p>در محیط استارتاپ که خود به خود ریسک زیادی (در فضای آزمایشگاهی قرار دارد) داره نباید ریسک عجیب و غریب کنیم.</p>
+</section>
+<section id="بخش-دوم-بیت-کوین-و-سایرین---فاندامنتال" class="level2">
+<h2 class="anchored" data-anchor-id="بخش-دوم-بیت-کوین-و-سایرین---فاندامنتال">بخش دوم: بیت کوین و سایرین - فاندامنتال</h2>
+<div class="example">
+<p>برای ارزیابی شرکت استارتاپ چه شاخص‌هایی رو می‌تونیم درنظر بگیرم؟</p>
+</div>
+<div class="definition">
+<p>شاخص‌های ارزیابی بیتکوین:</p>
+<ol type="1">
+<li>درآمد = user</li>
+<li>سرمایه گذاری = hash rate</li>
+<li>هزینه = btc mining</li>
+<li>ریسک = قیمت بیت کوین</li>
+</ol>
+<p>تمامی این شاخص‌ها مثبت هستند ولی ریسک فراموش نشه</p>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../img/BTCUSD-HASHRATE-ACTIVE-ADDRESSES.png" class="img-fluid figure-img"></p>
+<figcaption>نمودار قیمت، هش ریت و آدرس‌های فعال</figcaption>
+</figure>
+</div>
+<p>رمزنگاری یا کریپتوگرافی:</p>
+<ul>
+<li>وقتی که یک عبارت مشخص رو به یک فرآیند ببرم و اون فرآیند اطلاعاتی رو به من بده که قابل بازخوانی نیست بهش میگیم کریپتوگرافی یا رمزنگاری</li>
+</ul>
+<p>در نگاه ما که سرمایه گذاری است نیازی به بررسی خط تولید نداریم و در حد نیاز باید وقت بذارم</p>
+<p>مثل وقتی که میخوام یک شرکت بورسی رو بررسی کنم وقت اصلیمون رو برای بررسی صورت‌های مالی میذارم نه بررسی طولانی مدت خط تولید.</p>
+<p>فاندامنتال: بحث فاندامنتال در بیت کوین متفاوت از شرکت‌های بورسی است و با دید مالی به قضیه نگاه میکنیم.</p>
+<p>سال ۲۰۱۵ مجله اکونومیست در جلد یکی از مجله‌هاش نوشت The trust machine: به بیت کوین این لقب رو داد.</p>
+<p>بانک / تامین سرمایه / کارگزاری به عنوان واسط هستند که طرفین معامله بتوانند به هم اعتماد کنند.</p>
+<p>پس اگر بیت کوین ادعا کرد که میتونه جایگزین پول قدیمی بشه باید یک ساز و کار اعتماد سازی هم داشته باشه</p>
+<div class="example">
+<p>برای عملکرد بیتکوین ۲ چالش مهم وجود داشت:</p>
+<ul>
+<li>A: چالش چندبار خرج کردن یا double spending
+<ul>
+<li>در حالت مرسوم بانک مرکزی اجازه‌ی دوبار خرج کردن پول رو نمیده ولی در کریپتو چند هزار مدیر شبکه وجود داره و زمانی که ما درخواست تراکنش میدیم به چند هزار مدیر پیام ارسال میشه و امکان دوبار خرج کردن وجود داره!</li>
+</ul></li>
+<li>B: چالش اجماع سازی consensus
+<ul>
+<li>چطور با وجود این همه مدیر، فقط یک دفتر کل واحد داشته باشیم؟</li>
+</ul></li>
+</ul>
+</div>
+<p>این چالش‌ها از سال ۱۹۷۰ تا ۲۰۰۷ وجود داشت. که بیت کوین این دو چالش رو حل کرد.</p>
+<p>افراد مدیریت کننده دفتر کل = ماینرها</p>
+<div class="definition">
+<p>بلاکچین بیتکوین</p>
+<ul>
+<li>بلاکچین به مفهوم این است ک تراکنش ها به صورت دسته‌ای تائید میشن و به صورت زنجیره وار Block + Chain</li>
+<li>عملا ماینرها یا مدیران دفترکل بابت مدیریت این تراکنش‌ها پاداش دریافت می‌کنند.</li>
+<li>اینکه من نوعی یک بلاک رو ماین کردم یعنی دسته‌ی تراکنش‌ها رو تائید کردم و یک پاداش گرفتم.</li>
+</ul>
+</div>
+<p>اطلاعات کلی درباره بیتکوین: <a href="https://coinmarketcap.com/currencies/bitcoin/">coinmarketcap</a></p>
+<ul>
+<li><p>تعداد کل بیتکوین‌های موجود: Max. supply 21M BTC</p></li>
+<li><p>چقدر ماین شده: Total supply 19.95M BTC</p></li>
+<li><p>چقدر مانده: 21M - 19.95M = 1.05M</p></li>
+<li><p>ماینرها با صرف انرژی / هزینه بلاک‌ها رو تائید می‌کنند.</p>
+<ul>
+<li>مصرف انرژی ماینرها چیزی حدود ۲۵ درصد از کل مصرف برق ایران است</li>
+<li>۵۰ درصد انرژی تجدید پذیر</li>
+<li>ابزاریست برای حفظ امنیت شبکه کریپتو چون اینجا دیگر بانک مرکزی وجود نداره و احتمال تغییر در دارایی دیجیتال نباشه</li>
+</ul></li>
+</ul>
+<div class="definition">
+<ul>
+<li>mempool: دفتر کل است و اطلاعات بلاک رو نشون میده و اطلاعات تراکنش‌ها رو میده</li>
+<li>public key: کلید عمومی است و می‌توانیم به هرکی بدهیم. آدرس کیف پول ماست. (شبه شماره حساب شبا)</li>
+<li>private key: رمز ۱۲ کلمه‌ای است که به کسی نباید بدهیم.</li>
+</ul>
+</div>
+</section>
+<section id="بخش-سوم-بیت-کوین-اتریوم-و-سایرین---سرمایه-گذاری" class="level2">
+<h2 class="anchored" data-anchor-id="بخش-سوم-بیت-کوین-اتریوم-و-سایرین---سرمایه-گذاری">بخش سوم: بیت کوین، اتریوم و سایرین - سرمایه گذاری</h2>
+<p>:بیت کوین واقعا چیست؟</p>
+<p>یه سری از شرکتها مثل نیروگاه ها نمیشه بر اساس درآمد ارزش گذاری کرد اونا قیمت گذاری میشن حاصل عرضه و تقاضا هستن (pricing)</p>
+<p>یسری شرکت‌ها مثل پتروشیمی‌ها ارزشگذاری میشن (valuation)</p>
+<p>امروزه بیتکوین قیمت گذاری میشه و سایرین ارزشگذاری</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">mindmap
+  root((Bitcoin))
+    (Currency)
+      واحد پولی
+    (Software)
+      نرم افزار
+    (Medium of exchange)
+      ابزار مبادله
+    (Payment)
+      سیستم پرداخت
+    (Public leader)
+      دفتر کل حسابداری
+    (Commodity)
+      کالا
+    (Store of value)
+      ذخیره ارزش
+    (Peer to peer network)
+      شبکه همتا
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>هنوز مشخص نیست و درحالت آزمایشی قرار داره. کار کرد بیتکوین هنوز مشخص نیست و روش‌های ارزشگذاری هم بالتبع مشخص نیست و قابل اتکا نیست.</p>
+<p>برای اتریوم چون کسب و کارش مشخصه و روش ارزش گذاریش هم مشخصه</p>
+<p>مقایسه طلا و بیت کوین و پول: <a href="https://www.vaneck.com/us/en/blogs/digital-assets/the-investment-case-for-bitcoin/">منبع</a></p>
+<table class="table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">ویژگی‌ها</th>
+<th style="text-align: center;">بیتکوین</th>
+<th style="text-align: center;">طلا</th>
+<th style="text-align: center;">پول فیات<br>(دلار، یورو و ..)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">کمیابی</td>
+<td style="text-align: center;">محدودبه ۲۱ میلیون واحد</td>
+<td style="text-align: center;">رشد سالانه عرضه حدود 1.5 درصد</td>
+<td style="text-align: center;">از لحاظ تئوری نامحدود</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">پایداری</td>
+<td style="text-align: center;">توسط شبکه غیرمتمرکز جهانی</td>
+<td style="text-align: center;">طی هزاران سال</td>
+<td style="text-align: center;">وابسته به سیاست های مالی و پولی</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">قابلیت انتقال</td>
+<td style="text-align: center;">انتقال سریع و آسان از طریق اینترنت</td>
+<td style="text-align: center;">انتقال مقادیر زیاد سخت و پرهزینه</td>
+<td style="text-align: center;">انتقال آسان از طریق شبکه بانکی</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">ارزیابی اصالت</td>
+<td style="text-align: center;">تأیید فوری روی بلاکچین بدون امکان جعل</td>
+<td style="text-align: center;">امکان جعل</td>
+<td style="text-align: center;">اسکناس: به راحتی قابل و جعل پول دیجیتال :کمی سخت تر</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">تقسیم پذیری</td>
+<td style="text-align: center;">هر۱ بیت کوین برابر با ۱۰۰ میلیون ساتوشی</td>
+<td style="text-align: center;">دشواری تقسیم به واحدهای کوچکتر</td>
+<td style="text-align: center;">قابل تقسیم تا یک صدم واحد</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">همگن بودن</td>
+<td style="text-align: center;">یکسانی یک بیت کوین در همه جا</td>
+<td style="text-align: center;">ارزش یکسان در هر انس بسته به خلوص</td>
+<td style="text-align: center;">وابسته به نقدینگی و سیاست بانک مرکزی</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>به بیتکوین اصطلاحا طلای دیجیتال می‌گویند که خیلی دقیق نیست.</li>
+<li>در ریسک‌های ژئوپلتیک بیتکوین بازدهی خوبی نداره مثل الان بیابراین در سبد پرتفوها جای طلا رو نمیگیره.</li>
+</ul>
+<p>بیت کوین نه طلاس نه پول:</p>
+<ul>
+<li>به صورت تقریبی ۲۵۰۰ تراکنش در یک بلاک طی ده دقیقه ماین انجام میشه که به عبارتی ۷ تراکنش در ثانیه به صورت متوسط</li>
+<li>به عنوان مثال برای مقایسه visa حدود ۱۷۰۰ تراکنش در ثانیه رو مدیریت میکنه</li>
+</ul>
+<p><span class="math display">\[ 7 &lt;&lt;&lt; 1700 \]</span></p>
+<p>بنابراین بیت کوین مقیاس پذیر یا scalable نیست.</p>
+<p>درسته که میشد که بیتکوین یک سیستم پرداخت است ولی میبینه که توانایی همچین کاربردی محدود است و بیشتر ذخیره ارزش است.</p>
+<p>مقایسه نوسان قیمت بیتکوین و شاخص سهامی آمریکا</p>
+<ul>
+<li>میانگین نوسان شاخص سهامی آمریکا ۱۵ الی ۲۰ درصد</li>
+<li>اوایل بیتکوین نوسانات ۳۰ برابری شاخص سهام آمریکا داشته که امروزه به ۲ الی ۳ برابر رسیده</li>
+</ul>
+<div class="proof remark">
+<p><span class="proof-title"><em>نکته</em>. </span>نوسان به شدت کاهش پیدا کرده (ریسک کم شده)</p>
+</div>
+<p>Hash rate ماینرها باید در یک مسابقه شرکت کنند تا اعداد تصادفی رو ب تراکنش‌ها نسبت بدن و در مسابقه با ماینرهای دیگه برنده بشوند - بنابراین هر چقدر سریعتر بتوانند اینکار رو انجام بدن پاداش بیشتر می‌گیرند.</p>
+<p>برای داشتن سرعت بالا باید انرژی بیشتر مصرف کند یا تکنولوژی دیدتر استفاده کنه (اون عدد تصادفی hash هست hash rate اون عدد تصادفی در واحد زمان است.) بنابراین زمان زیاد میشه که ماینرها هزینه‌ی بیشتری و با سرعت بیشتر این اعداد رو پیدا کنند.</p>
+<p>در طول زمان hash rate از <span class="math inline">\(520 \frac{EH}{s}\)</span> در سال 2019 به <span class="math inline">\(1200 \frac{EH}{s}\)</span> رسیده. (<span class="math inline">\(E = 10^{18}\)</span>)</p>
+<p>در طول پنج سال عملکرد شبکه ۲۰ برابر بهتر شده.</p>
+<p>پس از نگاه بنیادی شاخص‌های سلامت شبکه اوکیه</p>
+<p>تعداد کاربر شبکه هم در طول زمان زیاد شده و به حدود یک میلیار نفر رسیده.</p>
+<div class="proof remark">
+<p><span class="proof-title"><em>نکته</em>. </span>شاخص‌های سلامت بیتکوین در وضعیت مطلوبی است و نوسان قیمتی ذات استارت‌ها است و ما به عنوان سرمایه گذار فاکتورهای سلامت شبکه رو بررسی میکنیم.</p>
+</div>
+</section>
+<section id="بخش-چهارم-اتریوم-بستری-توسعه-کسب-و-کار-یا-کامودیتی" class="level2">
+<h2 class="anchored" data-anchor-id="بخش-چهارم-اتریوم-بستری-توسعه-کسب-و-کار-یا-کامودیتی">بخش چهارم: اتریوم بستری توسعه کسب و کار یا کامودیتی</h2>
+<p>بستری برای خدمات Decenteralized Finance (Defi):</p>
+<ul>
+<li>خدمات مالی غیر متمرکز (فروش سهام، ملک و …)</li>
+<li>اتریوم فقط ابزار انتقال پول نیست.</li>
+<li>اتریوم خدمات مالی رو با توکن سازی انجام میده</li>
+<li>سولانا هم همین کاربرد رو داره که smart contract نامیده میشه.
+<ul>
+<li>امروزه سایت‌هایی مثل آمازون و گوگل و … از اتریوم استفاده می‌کنند.</li>
+</ul></li>
+<li>stable coin خودش به نوعی توکن سازی است یعنی به ازای هر usdt یک دلار آمریکا پستوانه داره.</li>
+</ul>
+</section>
+<section id="بخش-پنجم-رگولاتوری-توسعه-ابزارها-و-محافظت-از-سرمایه-عموم" class="level2">
+<h2 class="anchored" data-anchor-id="بخش-پنجم-رگولاتوری-توسعه-ابزارها-و-محافظت-از-سرمایه-عموم">بخش پنجم: رگولاتوری توسعه ابزارها و محافظت از سرمایه عموم</h2>
+<p>قوانین و مقررات در این حوزه بسیار مهم و جدیدا خیلی فعال شده و شرکت‌های بورسی مثل mara</p>
+<ul>
+<li><p>circle (ناشر usdc) strategy (خرید BTC)</p></li>
+<li><p>نکته‌ی مهم شرکت‌هایی که وارد بورس میشن فیلترهای مهمی رو رد کردند و این باعث اطمینان بیشتر به ما میده.</p></li>
+</ul>
+<p>مدیریت پرتفو:</p>
+<ul>
+<li>اضافه کردن تنها ۱ درصد به برتفو = افزایش بازدهی پرتفو از ۱۰ به ۱۲ درصد</li>
+<li>اضافه کردن تنها ۲.۵ درصد = افزایش بازدهی از ۱۰ به ۱۶ درصد</li>
+</ul>
+<p>درآمد در ایران:</p>
+<ul>
+<li>ماینرها در حدود یک میلیارد دلار</li>
+<li>صرافی‌ها در حدود یک میلیارد دلار با بیست درصد کمتر بیشتر</li>
+</ul>
+<p>مجموع دو میلیارد حداقل ۱.۵ میلیارد.</p>
+<p>به ازای درآمد صنعت میتونه یک ضریبی برای ارزش بازار صنعت بهش بدیم در کشورهای توسعه یافته در ۶ ضرب میشه و در ایران در ۲ ضرب میشه. بنابراین کف ارزش صنعت تقریبا ۳ میلیارد دلار میشه که تقریبا برابر با ارزش صنعت سیمان با ۸۰ سال قدمت میشه</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "کپی شد!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "کپی شد!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/mohsenebrahimyir\.github\.io\/cryptocurrency-abbas-gomar\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../intro.html" class="pagination-link" aria-label="مقدمه">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">مقدمه</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../references.html" class="pagination-link" aria-label="منابع">
+        <span class="nav-page-text">منابع</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p><a href="./index.html">کریپتو به زبان ساده</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p><a href="https://mohsenebrahimy.ir/">محسن ابراهیمی</a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

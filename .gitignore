@@ -1,0 +1,16 @@
+/.quarto/
+/.venv/
+/.vscode/
+/.ipynb_checkpoints/
+/project/
+
+
+## remove sources
+assets/
+bib/
+data/
+img/
+*.qmd
+_quarto.yml
+
+
