@@ -6,11 +6,11 @@
 
 
 ## remove sources
-assets/
-bib/
-data/
-img/
+/assets/
+/bib/
+/data/
+/img/
 *.qmd
-_quarto.yml
+/_quarto.yml
 
 
