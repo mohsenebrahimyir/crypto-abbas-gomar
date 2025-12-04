@@ -21,3 +21,15 @@ a.internal-link::after {
     */
     content: "\00A0↪";
 }
+
+/* 
+    Mermaid
+*/
+
+#mermaid-1 .pieTitleText, .slice, .legend text {
+    font-family: 'Vazirmatn' !important;
+}
+
+#mermaid-1 .slice, .legend text {
+    font-size: 14px !important;
+}
