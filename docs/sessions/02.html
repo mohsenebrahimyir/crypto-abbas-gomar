@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>کریپتو به زبان ساده - جلسه اول: نگاه سرمایه گذاری صنعت کریپتو</title>
+<title>کریپتو به زبان ساده - جلسه دوم: مبانی فنی بلاکچین</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../sessions/02.html" rel="next">
-<link href="../intro.html" rel="prev">
+<link href="../references.html" rel="next">
+<link href="../sessions/01.html" rel="prev">
 <link href=".././img/cover.jpg" rel="icon" type="image/jpeg">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -81,35 +81,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
 <link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300&amp;display=swap">
 <link rel="stylesheet" href="../assets/css/rtl-style.css">
@@ -125,7 +96,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="ناوبری نوار کناری را تغییر دهید" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../sessions/01.html"><span class="chapter-title">جلسه اول: نگاه سرمایه گذاری صنعت کریپتو</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../sessions/02.html"><span class="chapter-title">جلسه دوم: مبانی فنی بلاکچین</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="ناوبری نوار کناری را تغییر دهید" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -173,12 +144,12 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../sessions/01.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">جلسه اول: نگاه سرمایه گذاری صنعت کریپتو</span></a>
+  <a href="../sessions/01.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">جلسه اول: نگاه سرمایه گذاری صنعت کریپتو</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../sessions/02.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">جلسه دوم: مبانی فنی بلاکچین</span></a>
+  <a href="../sessions/02.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">جلسه دوم: مبانی فنی بلاکچین</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -193,24 +164,14 @@ window.Quarto = {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">فهرست مطالب</h2>
-   
-  <ul>
-  <li><a href="#بخش-اول-ساختار-و-ترکیب-صنعت-کریپتو" id="toc-بخش-اول-ساختار-و-ترکیب-صنعت-کریپتو" class="nav-link active" data-scroll-target="#بخش-اول-ساختار-و-ترکیب-صنعت-کریپتو">بخش اول: ساختار و ترکیب صنعت کریپتو</a></li>
-  <li><a href="#بخش-دوم-بیت-کوین-و-سایرین---فاندامنتال" id="toc-بخش-دوم-بیت-کوین-و-سایرین---فاندامنتال" class="nav-link" data-scroll-target="#بخش-دوم-بیت-کوین-و-سایرین---فاندامنتال">بخش دوم: بیت کوین و سایرین - فاندامنتال</a></li>
-  <li><a href="#بخش-سوم-بیت-کوین-اتریوم-و-سایرین---سرمایه-گذاری" id="toc-بخش-سوم-بیت-کوین-اتریوم-و-سایرین---سرمایه-گذاری" class="nav-link" data-scroll-target="#بخش-سوم-بیت-کوین-اتریوم-و-سایرین---سرمایه-گذاری">بخش سوم: بیت کوین، اتریوم و سایرین - سرمایه گذاری</a></li>
-  <li><a href="#بخش-چهارم-اتریوم-بستری-توسعه-کسب-و-کار-یا-کامودیتی" id="toc-بخش-چهارم-اتریوم-بستری-توسعه-کسب-و-کار-یا-کامودیتی" class="nav-link" data-scroll-target="#بخش-چهارم-اتریوم-بستری-توسعه-کسب-و-کار-یا-کامودیتی">بخش چهارم: اتریوم بستری توسعه کسب و کار یا کامودیتی</a></li>
-  <li><a href="#بخش-پنجم-رگولاتوری-توسعه-ابزارها-و-محافظت-از-سرمایه-عموم" id="toc-بخش-پنجم-رگولاتوری-توسعه-ابزارها-و-محافظت-از-سرمایه-عموم" class="nav-link" data-scroll-target="#بخش-پنجم-رگولاتوری-توسعه-ابزارها-و-محافظت-از-سرمایه-عموم">بخش پنجم: رگولاتوری توسعه ابزارها و محافظت از سرمایه عموم</a></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">جلسه اول: نگاه سرمایه گذاری صنعت کریپتو</span></h1>
+<h1 class="title"><span class="chapter-title">جلسه دوم: مبانی فنی بلاکچین</span></h1>
 </div>
 
 
@@ -222,7 +183,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">اصلاح شده</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2025-12-07</p>
+      <p class="date-modified">2025-12-09</p>
     </div>
   </div>
     
@@ -233,354 +194,539 @@ window.Quarto = {
 </header>
 
 
-<div class="example">
-<p>ارزش صنعت کریپتو در ایران که قدمتش تقریبا ۱۰ ساله، چقدر است؟</p>
-<ul>
-<li>شرکت سیمان ۱ میلیون تنی: تقریبا ۵ همت</li>
-<li>۸۰ میلیون تن تولید کل صنعت سیمان: تقریبا ارزش صنعت ۴۰۰ همت</li>
-<li>با دلار ۱۰۰ هزارتومان: تقریبا ۴ میلیارد دلار</li>
-<li>قدمت صنعت سیمان: تقریبا ۱۰۰ سال</li>
-</ul>
-</div>
-<section id="بخش-اول-ساختار-و-ترکیب-صنعت-کریپتو" class="level2">
-<h2 class="anchored" data-anchor-id="بخش-اول-ساختار-و-ترکیب-صنعت-کریپتو">بخش اول: ساختار و ترکیب صنعت کریپتو</h2>
-<p>چهار دهه (از سال ۱۹۷۲) تلاش برای ساخت بیتکوین صورت گرفته و در دل بحران سال ۲۰۰۹ متولد شد.</p>
-<div class="definition">
-<p>peer to peer: سیستم همتا به همتا</p>
-<ul>
-<li>سیستم انتقالی که بدون نیاز به واسطه پول جابجا میشه البته به صورت دیجیتالی.</li>
-</ul>
-</div>
-<p>در بحران‌های مالی برای نجات بانک‌های ورشکسته و اقتصاد پول به جامعه تزریق می‌کند (<strong>QE</strong>: Quantitative Easing &amp; <strong>QT</strong>: Quantitative Tightening) که این چاپ پول معمولا به صورت تورم خودش رو نشون میده</p>
-<div class="proof remark">
-<p><span class="proof-title"><em>نکته</em>. </span>میانگین تورم در سال در کل دنیا حدود ۵ درصد است که هدف بانک‌های مرکزی نگهداشتن در سطح ۲ درصد است که موفق نشده‌اند.</p>
-</div>
-<p>بنابراین چاپ پول و تورم یکی از ایرادات اصلی بانک‌های مرکزی است. هزینه نقل و انتقالات بانکی زیاد است.</p>
-<div class="example">
-<p>از جمعیت ۸ میلیاردی کره زمین چند نفر دسترسی به بانک ندارند؟</p>
-<details>
-<summary>
-پاسخ:
-</summary>
-حدود ۱.۳ میلیارد نفر
-</details>
-</div>
-<p>بنابراین مشکلات سیستم مالی بانکی که باعث بوجود آمدن کریپتو شده‌اند:</p>
-<ol type="1">
-<li>بحران‌های مالی بانکی زیاد</li>
-<li>هزینه نقل و انتقال زیاد</li>
-<li>دسترسی کم</li>
-</ol>
-<p>فازهای مختلف صنعت کریپتو از سال ۲۰۰۹ تا امروز (۲۰۲۵):</p>
-<ul>
-<li>2009-2020: جنبه سرگرمی</li>
-<li>2011-2013: رشد قیمتی شدید (باعث ایجاد و توجه در دنیا)
-<ul>
-<li>شرکت‌های crypto native: شرکت‌هایی که صرفا برای کریپتو بوجود آمدن
-<ul>
-<li>kraken, coinbase &amp; …</li>
-</ul></li>
-</ul></li>
-<li>2014-2016: ورشکستگی یک صرافی/ استفاده در معاملات قاچاقچیان</li>
-<li>2008-2020: فقط داشتیم زیرساخت ایجاد میکردیم تا بتونیم ارزهای دیجیتال رو در کیف پولمون ذخیره کنیم.</li>
-<li>2020-…: شرکت‌ها و موسسه‌های سرمایه گذاری وارد صنعت کریپتو شدند.</li>
-</ul>
-<p>مسیر توسعه صنعت کریپتو در ۴ دوره چهار ساله:</p>
-<ol type="1">
-<li>2009-2014: عمدتا بیتکوین ارزش بازار صنعت بود.</li>
-<li>2014-2018: اتریوم وارد بازی شد.</li>
-<li>2018-2022: استیبل کوین‌ها مثل تتر (USDC, USDT, DAI &amp; ..) وارد شدند.</li>
-<li>2022-…: نقش سایرین بیشتر شد.</li>
-</ol>
-<div class="definition">
-<p>دسته بندی صنعت کریپتو</p>
-<ol type="1">
-<li>حفظ دارایی: بیت کوین</li>
-<li>قراردادهای هوشمند: اتریوم و سولانا</li>
-<li>استیبل کوین‌ها: USDT, USDC, DAI</li>
-<li>دیفای و توکن سازی: (خرید و فروش - تامین مالی)</li>
-</ol>
-</div>
-<div class="proof remark">
-<p><span class="proof-title"><em>نکته</em>. </span>ارزش بازار فعلی صنعت کریپتو حدود ۳ میلیارد دلار است که نصف این سهم ارزش بازار بیت کوین است.</p>
-</div>
-<div class="definition">
-<p>power law: قانون توان</p>
-<p>این قانون بیان می‌کنه هر اکوسیستم نوظهوری که شکل میگیره معمولا چندتای اصلی باقی میمونن و بقیه حذف میشن یا درهم ادغام میشن.</p>
-</div>
-<p>در ریزیش‌ها بعضی از ارزها صفر می‌شوند ولی بیت کوین ریزش داشته فقط.</p>
-<ul>
-<li>در سایت <a href="https://www.tradingview.com/markets/cryptocurrencies/prices-all">Tradingview</a> ارزش بازار ارزهای مهم موجود است.
-<ul>
-<li>ده ارز با بیشترین ارزش بازار تشکیل دهنده‌ی اصلی صنعت کریپتو هستند.</li>
-</ul></li>
-</ul>
-<p>:ارزش بازار کل دارایی‌های دنیا (<a href="https://assetmarketcap.com">https://assetmarketcap.com/</a>)</p>
-<ol type="1">
-<li>ملک: ۶۵٪</li>
-<li>شرکت‌ها: ۱۰٪</li>
-<li>پول: ۱۵٪</li>
-<li>بازار اوراق: ۲۰٪</li>
-<li>طلا: ۵٪</li>
-<li>کریپتو: کمتر از ۰.۵٪</li>
-</ol>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">pie showData
-  title ارزش دارایی‌های جهان (1079.86T$)
-
-  "املاک" : 669.18
-  "نفت و گاز" : 122.82
-  "یوهان، دلار، یورو، ین و پوند" : 100.71
-  "طلا، مس و نقره" : 47.08
-  "انویدیا، اپل، گوگل، مایکروسافت و آمازون" : 18.4
-  "رمز ارزها" : 3.12
-  "دیگر دارائی‌ها" : 118.55
-
-
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-<div class="proof remark">
-<p><span class="proof-title"><em>نکته</em>. </span>فضای کریپتو بیشتر شبیه شرکت‌های استارت آپ است تا شبیه طلا و نقره. بنابراین نمیشه تمام سرمایه را در این صنعت قرار داد. خرد جمعی دنیا حدود ۵ درصد از میزان سرمایگذاری خودشان را به این صنعت اختصاص دادند.</p>
-</div>
-<p>میزان تخصیص سرمایه:</p>
-<ul>
-<li>خرد جمعی دنیا حدود ۵ درصد</li>
-<li>با ملاحظه و احتیاط حداکثر ۱۰ درصد از سرمایه آزاد با در نظر گرفتن قانون توان در ارزهای سرمایه گذاری میکنه که احتمال بقای زیادی دارند (Top 10)</li>
-</ul>
-<p>در محیط استارتاپ که خود به خود ریسک زیادی (در فضای آزمایشگاهی قرار دارد) داره نباید ریسک عجیب و غریب کنیم.</p>
-</section>
-<section id="بخش-دوم-بیت-کوین-و-سایرین---فاندامنتال" class="level2">
-<h2 class="anchored" data-anchor-id="بخش-دوم-بیت-کوین-و-سایرین---فاندامنتال">بخش دوم: بیت کوین و سایرین - فاندامنتال</h2>
-<div class="example">
-<p>برای ارزیابی شرکت استارتاپ چه شاخص‌هایی رو می‌تونیم درنظر بگیرم؟</p>
-</div>
-<div class="definition">
-<p>شاخص‌های ارزیابی بیتکوین:</p>
-<ol type="1">
-<li>درآمد = user</li>
-<li>سرمایه گذاری = hash rate</li>
-<li>هزینه = btc mining</li>
-<li>ریسک = قیمت بیت کوین</li>
-</ol>
-<p>تمامی این شاخص‌ها مثبت هستند ولی ریسک فراموش نشه</p>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../img/BTCUSD-HASHRATE-ACTIVE-ADDRESSES.png" class="img-fluid figure-img"></p>
-<figcaption>نمودار قیمت، هش ریت و آدرس‌های فعال</figcaption>
-</figure>
-</div>
-<p>رمزنگاری یا کریپتوگرافی:</p>
-<ul>
-<li>وقتی که یک عبارت مشخص رو به یک فرآیند ببرم و اون فرآیند اطلاعاتی رو به من بده که قابل بازخوانی نیست بهش میگیم کریپتوگرافی یا رمزنگاری</li>
-</ul>
-<p>در نگاه ما که سرمایه گذاری است نیازی به بررسی خط تولید نداریم و در حد نیاز باید وقت بذارم</p>
-<p>مثل وقتی که میخوام یک شرکت بورسی رو بررسی کنم وقت اصلیمون رو برای بررسی صورت‌های مالی میذارم نه بررسی طولانی مدت خط تولید.</p>
-<p>فاندامنتال: بحث فاندامنتال در بیت کوین متفاوت از شرکت‌های بورسی است و با دید مالی به قضیه نگاه میکنیم.</p>
-<p>سال ۲۰۱۵ مجله اکونومیست در جلد یکی از مجله‌هاش نوشت The trust machine: به بیت کوین این لقب رو داد.</p>
-<p>بانک / تامین سرمایه / کارگزاری به عنوان واسط هستند که طرفین معامله بتوانند به هم اعتماد کنند.</p>
-<p>پس اگر بیت کوین ادعا کرد که میتونه جایگزین پول قدیمی بشه باید یک ساز و کار اعتماد سازی هم داشته باشه</p>
-<div class="example">
-<p>برای عملکرد بیتکوین ۲ چالش مهم وجود داشت:</p>
-<ul>
-<li>A: چالش چندبار خرج کردن یا double spending
-<ul>
-<li>در حالت مرسوم بانک مرکزی اجازه‌ی دوبار خرج کردن پول رو نمیده ولی در کریپتو چند هزار مدیر شبکه وجود داره و زمانی که ما درخواست تراکنش میدیم به چند هزار مدیر پیام ارسال میشه و امکان دوبار خرج کردن وجود داره!</li>
-</ul></li>
-<li>B: چالش اجماع سازی consensus
-<ul>
-<li>چطور با وجود این همه مدیر، فقط یک دفتر کل واحد داشته باشیم؟</li>
-</ul></li>
-</ul>
-</div>
-<p>این چالش‌ها از سال ۱۹۷۰ تا ۲۰۰۷ وجود داشت. که بیت کوین این دو چالش رو حل کرد.</p>
-<p>افراد مدیریت کننده دفتر کل = ماینرها</p>
-<div class="definition">
-<p>بلاکچین بیتکوین</p>
-<ul>
-<li>بلاکچین به مفهوم این است ک تراکنش ها به صورت دسته‌ای تائید میشن و به صورت زنجیره وار Block + Chain</li>
-<li>عملا ماینرها یا مدیران دفترکل بابت مدیریت این تراکنش‌ها پاداش دریافت می‌کنند.</li>
-<li>اینکه من نوعی یک بلاک رو ماین کردم یعنی دسته‌ی تراکنش‌ها رو تائید کردم و یک پاداش گرفتم.</li>
-</ul>
-</div>
-<p>اطلاعات کلی درباره بیتکوین: <a href="https://coinmarketcap.com/currencies/bitcoin/">coinmarketcap</a></p>
-<ul>
-<li><p>تعداد کل بیتکوین‌های موجود: Max. supply 21M BTC</p></li>
-<li><p>چقدر ماین شده: Total supply 19.95M BTC</p></li>
-<li><p>چقدر مانده: 21M - 19.95M = 1.05M</p></li>
-<li><p>ماینرها با صرف انرژی / هزینه بلاک‌ها رو تائید می‌کنند.</p>
-<ul>
-<li>مصرف انرژی ماینرها چیزی حدود ۲۵ درصد از کل مصرف برق ایران است</li>
-<li>۵۰ درصد انرژی تجدید پذیر</li>
-<li>ابزاریست برای حفظ امنیت شبکه کریپتو چون اینجا دیگر بانک مرکزی وجود نداره و احتمال تغییر در دارایی دیجیتال نباشه</li>
-</ul></li>
-</ul>
-<div class="definition">
-<ul>
-<li>mempool: دفتر کل است و اطلاعات بلاک رو نشون میده و اطلاعات تراکنش‌ها رو میده</li>
-<li>public key: کلید عمومی است و می‌توانیم به هرکی بدهیم. آدرس کیف پول ماست. (شبه شماره حساب شبا)</li>
-<li>private key: رمز ۱۲ کلمه‌ای است که به کسی نباید بدهیم.</li>
-</ul>
-</div>
-</section>
-<section id="بخش-سوم-بیت-کوین-اتریوم-و-سایرین---سرمایه-گذاری" class="level2">
-<h2 class="anchored" data-anchor-id="بخش-سوم-بیت-کوین-اتریوم-و-سایرین---سرمایه-گذاری">بخش سوم: بیت کوین، اتریوم و سایرین - سرمایه گذاری</h2>
-<p>:بیت کوین واقعا چیست؟</p>
-<p>یه سری از شرکتها مثل نیروگاه ها نمیشه بر اساس درآمد ارزش گذاری کرد اونا قیمت گذاری میشن حاصل عرضه و تقاضا هستن (pricing)</p>
-<p>یسری شرکت‌ها مثل پتروشیمی‌ها ارزشگذاری میشن (valuation)</p>
-<p>امروزه بیتکوین قیمت گذاری میشه و سایرین ارزشگذاری</p>
+<p>در بورس بعد از تحلیل صورت‌های مالی و ارزشگذاری برای اطمینان از تحلیل صورت گرفته به سراغ کارشناس فنی شرکت یا صنعت مربوطه میریم تا صحت تحلیلی رو چک کنیم و این موضوع نکته‌ی بسیار مهمی است.</p>
+<p>در کریپتو هم امروز این کار رو میکنیم و این جلسه به صحبت‌های کارشناس فنی بلاکچین (سهیل نیکزاد) که پایه و اساس کریپتو است اختصاص دارد.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div>
 <p></p><figure class="figure"><p></p>
 <div>
 <pre class="mermaid mermaid-js">mindmap
-  root((Bitcoin))
-    (Currency&lt;br&gt;واحد پولی)
-    (Software&lt;br&gt;نرم افزار)
-    (Medium of exchange&lt;br&gt;ابزار مبادله)
-    (Payment&lt;br&gt;سیستم پرداخت)
-    (Public leader&lt;br&gt;دفتر کل حسابداری)
-    (Commodity&lt;br&gt;کالا)
-    (Store of value&lt;br&gt;ذخیره ارزش)
-    (Peer to peer network&lt;br&gt;شبکه همتا)
+  root((عناوین))
+    (فناوری)
+        [مقدمات]
+            پول و بانکداری
+            تاریخچه و نقاط عطف بلاکچین
+            شبکه‌های کامپیوتری
+            رمزنگاری
+        [مبانی]
+            معماری و اجزای سازنده
+            فرآیند تراکنش و پردازش اطلاعات
+            امنیت، شفافیت و عدم تمرکز
+            نرم افزارها، سخت افزارها و کاربردها
+    (امورمالی)
+        [مالیه متمرکز]
+            انواع بازارها تبادل
+            صندوق‌های سرمایه گذاری و حضانتی
+            درگاه پرداخت رمزارزی و نظریه نظیر
+            تامین مالی متمرکز (وام، بیمه و ...)
+        [مالیه نامتمرکز]
+            مبانی قراردادهای هوشمند
+            تامین مالی سازمان خودمختار نامتمرکز
+            ابزارها و پلتفرم‌ها
+    (پذیرش)
+        [صنعت]
+            بیت کوین
+            اتریوم و ماشین‌های مجازی اتریوم
+            اموال دنیای حقیقی و استیبل کوین‌ها
+            توکن‌های یکتا
+        [مقررات]
+            انواع و کاربردهای توکن‌ها
+            مدل‌های اقتصادی مبتنی بر توکن
+            تولید و عرضه توکن
+    (کسب و کار)
+        [اکوسیستم]
+            لجستیک
+            زنجیره تامین
+            امنیت و سلامت اطلاعات
+            هویت و آرا مبتنی بر وب نسل سوم
+        [عرضه توکن]
+            پرداخت‌ها و صدور اسناد تجاری
+            صندوق‌های معامله پذیر در بورس
+            رمزارز بانک‌های مرکزی
+            مالیات
+
 </pre>
 </div>
 <p></p></figure><p></p>
 </div>
 </div>
 </div>
-<p>هنوز مشخص نیست و درحالت آزمایشی قرار داره. کار کرد بیتکوین هنوز مشخص نیست و روش‌های ارزشگذاری هم بالتبع مشخص نیست و قابل اتکا نیست.</p>
-<p>برای اتریوم چون کسب و کارش مشخصه و روش ارزش گذاریش هم مشخصه</p>
-<p>مقایسه طلا و بیت کوین و پول: <a href="https://www.vaneck.com/us/en/blogs/digital-assets/the-investment-case-for-bitcoin/">منبع</a></p>
-<table class="table">
-<colgroup>
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">ویژگی‌ها</th>
-<th style="text-align: center;">بیتکوین</th>
-<th style="text-align: center;">طلا</th>
-<th style="text-align: center;">پول فیات<br>(دلار، یورو و ..)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">کمیابی</td>
-<td style="text-align: center;">محدودبه ۲۱ میلیون واحد</td>
-<td style="text-align: center;">رشد سالانه عرضه حدود 1.5 درصد</td>
-<td style="text-align: center;">از لحاظ تئوری نامحدود</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">پایداری</td>
-<td style="text-align: center;">توسط شبکه غیرمتمرکز جهانی</td>
-<td style="text-align: center;">طی هزاران سال</td>
-<td style="text-align: center;">وابسته به سیاست های مالی و پولی</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">قابلیت انتقال</td>
-<td style="text-align: center;">انتقال سریع و آسان از طریق اینترنت</td>
-<td style="text-align: center;">انتقال مقادیر زیاد سخت و پرهزینه</td>
-<td style="text-align: center;">انتقال آسان از طریق شبکه بانکی</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">ارزیابی اصالت</td>
-<td style="text-align: center;">تأیید فوری روی بلاکچین بدون امکان جعل</td>
-<td style="text-align: center;">امکان جعل</td>
-<td style="text-align: center;">اسکناس: به راحتی قابل و جعل پول دیجیتال :کمی سخت تر</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">تقسیم پذیری</td>
-<td style="text-align: center;">هر۱ بیت کوین برابر با ۱۰۰ میلیون ساتوشی</td>
-<td style="text-align: center;">دشواری تقسیم به واحدهای کوچکتر</td>
-<td style="text-align: center;">قابل تقسیم تا یک صدم واحد</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">همگن بودن</td>
-<td style="text-align: center;">یکسانی یک بیت کوین در همه جا</td>
-<td style="text-align: center;">ارزش یکسان در هر انس بسته به خلوص</td>
-<td style="text-align: center;">وابسته به نقدینگی و سیاست بانک مرکزی</td>
-</tr>
-</tbody>
-</table>
+<p>فناوری: سرعت رشد چشمگیر</p>
 <ul>
-<li>به بیتکوین اصطلاحا طلای دیجیتال می‌گویند که خیلی دقیق نیست.</li>
-<li>در ریسک‌های ژئوپلتیک بیتکوین بازدهی خوبی نداره مثل الان بیابراین در سبد پرتفوها جای طلا رو نمیگیره.</li>
+<li>پروژه‌های جدید ظرف چند ماه تکلیفشون معلوم میشه (شکست / موفقیت)</li>
+<li>این سرعت زیاد یکی از علت‌های نوسانات قیمتی شدید است.</li>
 </ul>
-<p>بیت کوین نه طلاس نه پول:</p>
+<p>پول ابزار انتقال، ذخیره ارزش در نظر گرفت.</p>
+<p>تاریخچه پول:</p>
 <ul>
-<li>به صورت تقریبی ۲۵۰۰ تراکنش در یک بلاک طی ده دقیقه ماین انجام میشه که به عبارتی ۷ تراکنش در ثانیه به صورت متوسط</li>
-<li>به عنوان مثال برای مقایسه visa حدود ۱۷۰۰ تراکنش در ثانیه رو مدیریت میکنه</li>
+<li>پول اولیه: صدف بود که بین طرفین مبادله و جابجا میشد</li>
+<li>طلا: یک فرضیه است که مقدار طلای جهانی محدود و قابلیت تولید نداره و رقابت‌های بر سر سهم بیشتر داشتن از طلاس</li>
+<li>پول چینی</li>
 </ul>
-<p><span class="math display">\[ 7 &lt;&lt;&lt; 1700 \]</span></p>
-<p>بنابراین بیت کوین مقیاس پذیر یا scalable نیست.</p>
-<p>درسته که میشد که بیتکوین یک سیستم پرداخت است ولی میبینه که توانایی همچین کاربردی محدود است و بیشتر ذخیره ارزش است.</p>
-<p>مقایسه نوسان قیمت بیتکوین و شاخص سهامی آمریکا</p>
-<ul>
-<li>میانگین نوسان شاخص سهامی آمریکا ۱۵ الی ۲۰ درصد</li>
-<li>اوایل بیتکوین نوسانات ۳۰ برابری شاخص سهام آمریکا داشته که امروزه به ۲ الی ۳ برابر رسیده</li>
-</ul>
-<div class="proof remark">
-<p><span class="proof-title"><em>نکته</em>. </span>نوسان به شدت کاهش پیدا کرده (ریسک کم شده)</p>
+<p>بحث امنیت نگهداری و جابجایی پول بوجود اومده که راه حلش شد سپردن پول به بانک‌ها (در این مدتی که پول دست بانک‌ها بود می‌تونستن از این پول کار اقتصادی انجام بدن و درآمد داشته باشن)</p>
+<p>دولت‌ها متوجه این قضیه شدند. بانک‌های مرکزی متولد شدند و قانونگذاری شروع شد. لزوما این قانونگذاری به نفع افرادی نیست که پولشون رو به بانک‌ها سپردن! مثلا بانک‌ها می‌تونند تا ۵ برابر سپرده‌هایی که دارند پول خرج کنند. (ضریب فزاینده)</p>
+<p>پیمان برتون ودز Bretton Woods system (1944-1971):</p>
+<p>این پیمان با هدف کنترل روابط و مدیریت روابط پولی میان دولت‌ها انجام گرفت. در این توافق ذکر شد ارزش دلار آمریکا با طلا سنجیده می‌شود و باقی ارزهای رایج متناسب با دلار ارزشگذاری می‌شود. آمریکا از این پیمان بابت مشکلات زیادی که داشت در سال ۱۹۷۱ خارج شد.</p>
+<p>بعد از سال ۱۹۷۰ پول خطرناک‌تر شد. چون دولت‌ها آزادانه می‌تونن که پول چاپ کنند و نوسانات ارزهای کشورها زیاد شده.</p>
+<p>بعد از بحران سال ۲۰۰۸ ناکارآمدی سیستم بانکی واضح تر شد.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<svg width="672" height="480" viewbox="0.00 0.00 664.00 244.80" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 240.8)">
+<title>G</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-240.8 660,-240.8 660,4 -4,4"></polygon>
+<g id="clust8" class="cluster">
+<title>cluster_2</title>
+<path fill="none" stroke="red" d="M584,-8C584,-8 636,-8 636,-8 642,-8 648,-14 648,-20 648,-20 648,-216.8 648,-216.8 648,-222.8 642,-228.8 636,-228.8 636,-228.8 584,-228.8 584,-228.8 578,-228.8 572,-222.8 572,-216.8 572,-216.8 572,-20 572,-20 572,-14 578,-8 584,-8"></path>
+<text text-anchor="middle" x="610" y="-212.2" font-family="Times,serif" font-size="14.00">Decenteral</text>
+</g>
+<g id="clust1" class="cluster">
+<title>cluster_0</title>
+<path fill="none" stroke="blue" d="M20,-137.6C20,-137.6 170,-137.6 170,-137.6 176,-137.6 182,-143.6 182,-149.6 182,-149.6 182,-216.8 182,-216.8 182,-222.8 176,-228.8 170,-228.8 170,-228.8 20,-228.8 20,-228.8 14,-228.8 8,-222.8 8,-216.8 8,-216.8 8,-149.6 8,-149.6 8,-143.6 14,-137.6 20,-137.6"></path>
+<text text-anchor="middle" x="95" y="-212.2" font-family="Times,serif" font-size="14.00">Centeral</text>
+</g>
+<g id="clust3" class="cluster">
+<title>cluster_1</title>
+<path fill="none" stroke="green" d="M202,-94.4C202,-94.4 552,-94.4 552,-94.4 558,-94.4 564,-100.4 564,-106.4 564,-106.4 564,-216.8 564,-216.8 564,-222.8 558,-228.8 552,-228.8 552,-228.8 202,-228.8 202,-228.8 196,-228.8 190,-222.8 190,-216.8 190,-216.8 190,-106.4 190,-106.4 190,-100.4 196,-94.4 202,-94.4"></path>
+<text text-anchor="middle" x="377" y="-212.2" font-family="Times,serif" font-size="14.00">Federal</text>
+</g>
+<!-- aa -->
+<g id="node1" class="node">
+<title>aa</title>
+<ellipse fill="black" stroke="black" cx="95" cy="-192.4" rx="3.6" ry="3.6"></ellipse>
+</g>
+<!-- bb -->
+<g id="node2" class="node">
+<title>bb</title>
+<ellipse fill="black" stroke="black" cx="20" cy="-149.2" rx="3.6" ry="3.6"></ellipse>
+</g>
+<!-- aa&#45;&gt;bb -->
+<g id="edge1" class="edge">
+<title>aa-&gt;bb</title>
+<path fill="none" stroke="black" d="M92.15,-189.84C80.27,-183.31 34.74,-158.3 22.85,-151.77"></path>
+</g>
+<!-- cc -->
+<g id="node3" class="node">
+<title>cc</title>
+<ellipse fill="black" stroke="black" cx="45" cy="-149.2" rx="3.6" ry="3.6"></ellipse>
+</g>
+<!-- aa&#45;&gt;cc -->
+<g id="edge2" class="edge">
+<title>aa-&gt;cc</title>
+<path fill="none" stroke="black" d="M92.59,-189.41C84.16,-182.47 56.08,-159.33 47.51,-152.26"></path>
+</g>
+<!-- dd -->
+<g id="node4" class="node">
+<title>dd</title>
+<ellipse fill="black" stroke="black" cx="70" cy="-149.2" rx="3.6" ry="3.6"></ellipse>
+</g>
+<!-- aa&#45;&gt;dd -->
+<g id="edge3" class="edge">
+<title>aa-&gt;dd</title>
+<path fill="none" stroke="black" d="M93.36,-188.7C88.75,-181.11 75.76,-159.69 71.42,-152.55"></path>
+</g>
+<!-- ee -->
+<g id="node5" class="node">
+<title>ee</title>
+<ellipse fill="black" stroke="black" cx="95" cy="-149.2" rx="3.6" ry="3.6"></ellipse>
+</g>
+<!-- aa&#45;&gt;ee -->
+<g id="edge4" class="edge">
+<title>aa-&gt;ee</title>
+<path fill="none" stroke="black" d="M95,-188.7C95,-181.25 95,-160.49 95,-152.97"></path>
+</g>
+<!-- ff -->
+<g id="node6" class="node">
+<title>ff</title>
+<ellipse fill="black" stroke="black" cx="120" cy="-149.2" rx="3.6" ry="3.6"></ellipse>
+</g>
+<!-- aa&#45;&gt;ff -->
+<g id="edge5" class="edge">
+<title>aa-&gt;ff</title>
+<path fill="none" stroke="black" d="M96.64,-188.7C101.25,-181.11 114.24,-159.69 118.58,-152.55"></path>
+</g>
+<!-- gg -->
+<g id="node7" class="node">
+<title>gg</title>
+<ellipse fill="black" stroke="black" cx="145" cy="-149.2" rx="3.6" ry="3.6"></ellipse>
+</g>
+<!-- aa&#45;&gt;gg -->
+<g id="edge6" class="edge">
+<title>aa-&gt;gg</title>
+<path fill="none" stroke="black" d="M97.41,-189.41C105.84,-182.47 133.92,-159.33 142.49,-152.26"></path>
+</g>
+<!-- hh -->
+<g id="node8" class="node">
+<title>hh</title>
+<ellipse fill="black" stroke="black" cx="170" cy="-149.2" rx="3.6" ry="3.6"></ellipse>
+</g>
+<!-- aa&#45;&gt;hh -->
+<g id="edge7" class="edge">
+<title>aa-&gt;hh</title>
+<path fill="none" stroke="black" d="M97.85,-189.84C109.73,-183.31 155.26,-158.3 167.15,-151.77"></path>
+</g>
+<!-- a -->
+<g id="node9" class="node">
+<title>a</title>
+<ellipse fill="black" stroke="black" cx="265" cy="-149.2" rx="3.6" ry="3.6"></ellipse>
+</g>
+<!-- a1 -->
+<g id="node10" class="node">
+<title>a1</title>
+<ellipse fill="black" stroke="black" cx="202" cy="-106" rx="3.6" ry="3.6"></ellipse>
+</g>
+<!-- a&#45;&gt;a1 -->
+<g id="edge8" class="edge">
+<title>a-&gt;a1</title>
+<path fill="none" stroke="black" d="M262.29,-146.43C251.93,-139.65 214.85,-115.4 204.63,-108.72"></path>
+</g>
+<!-- a2 -->
+<g id="node11" class="node">
+<title>a2</title>
+<ellipse fill="black" stroke="black" cx="227" cy="-106" rx="3.6" ry="3.6"></ellipse>
+</g>
+<!-- a&#45;&gt;a2 -->
+<g id="edge9" class="edge">
+<title>a-&gt;a2</title>
+<path fill="none" stroke="black" d="M262.96,-145.98C256.42,-138.9 236.05,-116.81 229.24,-109.43"></path>
+</g>
+<!-- a3 -->
+<g id="node12" class="node">
+<title>a3</title>
+<ellipse fill="black" stroke="black" cx="252" cy="-106" rx="3.6" ry="3.6"></ellipse>
+</g>
+<!-- a&#45;&gt;a3 -->
+<g id="edge10" class="edge">
+<title>a-&gt;a3</title>
+<path fill="none" stroke="black" d="M264.15,-145.5C261.8,-138.05 255.25,-117.29 252.87,-109.77"></path>
+</g>
+<!-- a4 -->
+<g id="node13" class="node">
+<title>a4</title>
+<ellipse fill="black" stroke="black" cx="277" cy="-106" rx="3.6" ry="3.6"></ellipse>
+</g>
+<!-- a&#45;&gt;a4 -->
+<g id="edge11" class="edge">
+<title>a-&gt;a4</title>
+<path fill="none" stroke="black" d="M265.79,-145.5C267.96,-138.05 274,-117.29 276.19,-109.77"></path>
+</g>
+<!-- a5 -->
+<g id="node14" class="node">
+<title>a5</title>
+<ellipse fill="black" stroke="black" cx="302" cy="-106" rx="3.6" ry="3.6"></ellipse>
+</g>
+<!-- a&#45;&gt;a5 -->
+<g id="edge12" class="edge">
+<title>a-&gt;a5</title>
+<path fill="none" stroke="black" d="M266.99,-145.98C273.35,-138.9 293.19,-116.81 299.82,-109.43"></path>
+</g>
+<!-- b -->
+<g id="node15" class="node">
+<title>b</title>
+<ellipse fill="black" stroke="black" cx="377" cy="-149.2" rx="3.6" ry="3.6"></ellipse>
+</g>
+<!-- b1 -->
+<g id="node16" class="node">
+<title>b1</title>
+<ellipse fill="black" stroke="black" cx="327" cy="-106" rx="3.6" ry="3.6"></ellipse>
+</g>
+<!-- b&#45;&gt;b1 -->
+<g id="edge13" class="edge">
+<title>b-&gt;b1</title>
+<path fill="none" stroke="black" d="M374.59,-146.21C366.16,-139.27 338.08,-116.13 329.51,-109.06"></path>
+</g>
+<!-- b2 -->
+<g id="node17" class="node">
+<title>b2</title>
+<ellipse fill="black" stroke="black" cx="352" cy="-106" rx="3.6" ry="3.6"></ellipse>
+</g>
+<!-- b&#45;&gt;b2 -->
+<g id="edge14" class="edge">
+<title>b-&gt;b2</title>
+<path fill="none" stroke="black" d="M375.36,-145.5C370.75,-137.91 357.76,-116.49 353.42,-109.35"></path>
+</g>
+<!-- b3 -->
+<g id="node18" class="node">
+<title>b3</title>
+<ellipse fill="black" stroke="black" cx="377" cy="-106" rx="3.6" ry="3.6"></ellipse>
+</g>
+<!-- b&#45;&gt;b3 -->
+<g id="edge15" class="edge">
+<title>b-&gt;b3</title>
+<path fill="none" stroke="black" d="M377,-145.5C377,-138.05 377,-117.29 377,-109.77"></path>
+</g>
+<!-- b4 -->
+<g id="node19" class="node">
+<title>b4</title>
+<ellipse fill="black" stroke="black" cx="402" cy="-106" rx="3.6" ry="3.6"></ellipse>
+</g>
+<!-- b&#45;&gt;b4 -->
+<g id="edge16" class="edge">
+<title>b-&gt;b4</title>
+<path fill="none" stroke="black" d="M378.64,-145.5C383.25,-137.91 396.24,-116.49 400.58,-109.35"></path>
+</g>
+<!-- b5 -->
+<g id="node20" class="node">
+<title>b5</title>
+<ellipse fill="black" stroke="black" cx="427" cy="-106" rx="3.6" ry="3.6"></ellipse>
+</g>
+<!-- b&#45;&gt;b5 -->
+<g id="edge17" class="edge">
+<title>b-&gt;b5</title>
+<path fill="none" stroke="black" d="M379.41,-146.21C387.84,-139.27 415.92,-116.13 424.49,-109.06"></path>
+</g>
+<!-- c -->
+<g id="node21" class="node">
+<title>c</title>
+<ellipse fill="black" stroke="black" cx="489" cy="-149.2" rx="3.6" ry="3.6"></ellipse>
+</g>
+<!-- c1 -->
+<g id="node22" class="node">
+<title>c1</title>
+<ellipse fill="black" stroke="black" cx="452" cy="-106" rx="3.6" ry="3.6"></ellipse>
+</g>
+<!-- c&#45;&gt;c1 -->
+<g id="edge18" class="edge">
+<title>c-&gt;c1</title>
+<path fill="none" stroke="black" d="M487.01,-145.98C480.65,-138.9 460.81,-116.81 454.18,-109.43"></path>
+</g>
+<!-- c2 -->
+<g id="node23" class="node">
+<title>c2</title>
+<ellipse fill="black" stroke="black" cx="477" cy="-106" rx="3.6" ry="3.6"></ellipse>
+</g>
+<!-- c&#45;&gt;c2 -->
+<g id="edge19" class="edge">
+<title>c-&gt;c2</title>
+<path fill="none" stroke="black" d="M488.21,-145.5C486.04,-138.05 480,-117.29 477.81,-109.77"></path>
+</g>
+<!-- c3 -->
+<g id="node24" class="node">
+<title>c3</title>
+<ellipse fill="black" stroke="black" cx="502" cy="-106" rx="3.6" ry="3.6"></ellipse>
+</g>
+<!-- c&#45;&gt;c3 -->
+<g id="edge20" class="edge">
+<title>c-&gt;c3</title>
+<path fill="none" stroke="black" d="M489.85,-145.5C492.2,-138.05 498.75,-117.29 501.13,-109.77"></path>
+</g>
+<!-- c4 -->
+<g id="node25" class="node">
+<title>c4</title>
+<ellipse fill="black" stroke="black" cx="527" cy="-106" rx="3.6" ry="3.6"></ellipse>
+</g>
+<!-- c&#45;&gt;c4 -->
+<g id="edge21" class="edge">
+<title>c-&gt;c4</title>
+<path fill="none" stroke="black" d="M491.04,-145.98C497.58,-138.9 517.95,-116.81 524.76,-109.43"></path>
+</g>
+<!-- c5 -->
+<g id="node26" class="node">
+<title>c5</title>
+<ellipse fill="black" stroke="black" cx="552" cy="-106" rx="3.6" ry="3.6"></ellipse>
+</g>
+<!-- c&#45;&gt;c5 -->
+<g id="edge22" class="edge">
+<title>c-&gt;c5</title>
+<path fill="none" stroke="black" d="M491.71,-146.43C502.07,-139.65 539.15,-115.4 549.37,-108.72"></path>
+</g>
+<!-- d -->
+<g id="node27" class="node">
+<title>d</title>
+<ellipse fill="black" stroke="black" cx="377" cy="-192.4" rx="3.6" ry="3.6"></ellipse>
+</g>
+<!-- d&#45;&gt;a -->
+<g id="edge23" class="edge">
+<title>d-&gt;a</title>
+<path fill="none" stroke="black" d="M373.77,-190.21C357.41,-184.2 283.91,-157.16 268.03,-151.32"></path>
+</g>
+<!-- d&#45;&gt;b -->
+<g id="edge24" class="edge">
+<title>d-&gt;b</title>
+<path fill="none" stroke="black" d="M377,-188.7C377,-181.25 377,-160.49 377,-152.97"></path>
+</g>
+<!-- d&#45;&gt;c -->
+<g id="edge25" class="edge">
+<title>d-&gt;c</title>
+<path fill="none" stroke="black" d="M380.23,-190.21C396.59,-184.2 470.09,-157.16 485.97,-151.32"></path>
+</g>
+<!-- m1 -->
+<g id="node28" class="node">
+<title>m1</title>
+<ellipse fill="black" stroke="black" cx="595" cy="-192.4" rx="3.6" ry="3.6"></ellipse>
+</g>
+<!-- m2 -->
+<g id="node29" class="node">
+<title>m2</title>
+<ellipse fill="black" stroke="black" cx="584" cy="-149.2" rx="3.6" ry="3.6"></ellipse>
+</g>
+<!-- m1&#45;&gt;m2 -->
+<g id="edge26" class="edge">
+<title>m1-&gt;m2</title>
+<path fill="none" stroke="black" d="M594.28,-188.7C592.29,-181.25 586.75,-160.49 584.74,-152.97"></path>
+</g>
+<!-- m3 -->
+<g id="node30" class="node">
+<title>m3</title>
+<ellipse fill="black" stroke="black" cx="607" cy="-106" rx="3.6" ry="3.6"></ellipse>
+</g>
+<!-- m1&#45;&gt;m3 -->
+<g id="edge30" class="edge">
+<title>m1-&gt;m3</title>
+<path fill="none" stroke="black" d="M595.4,-188.59C597.22,-175.78 604.74,-122.92 606.59,-109.91"></path>
+</g>
+<!-- m2&#45;&gt;m3 -->
+<g id="edge27" class="edge">
+<title>m2-&gt;m3</title>
+<path fill="none" stroke="black" d="M585.51,-145.5C589.67,-138.05 601.26,-117.29 605.46,-109.77"></path>
+</g>
+<!-- m4 -->
+<g id="node31" class="node">
+<title>m4</title>
+<ellipse fill="black" stroke="black" cx="584" cy="-62.8" rx="3.6" ry="3.6"></ellipse>
+</g>
+<!-- m2&#45;&gt;m4 -->
+<g id="edge31" class="edge">
+<title>m2-&gt;m4</title>
+<path fill="none" stroke="black" d="M584,-145.39C584,-132.58 584,-79.72 584,-66.71"></path>
+</g>
+<!-- m3&#45;&gt;m4 -->
+<g id="edge28" class="edge">
+<title>m3-&gt;m4</title>
+<path fill="none" stroke="black" d="M605.49,-102.3C601.33,-94.85 589.74,-74.09 585.54,-66.57"></path>
+</g>
+<!-- m5 -->
+<g id="node32" class="node">
+<title>m5</title>
+<ellipse fill="black" stroke="black" cx="595" cy="-19.6" rx="3.6" ry="3.6"></ellipse>
+</g>
+<!-- m3&#45;&gt;m5 -->
+<g id="edge32" class="edge">
+<title>m3-&gt;m5</title>
+<path fill="none" stroke="black" d="M606.6,-102.19C604.78,-89.38 597.26,-36.52 595.41,-23.51"></path>
+</g>
+<!-- m4&#45;&gt;m5 -->
+<g id="edge29" class="edge">
+<title>m4-&gt;m5</title>
+<path fill="none" stroke="black" d="M584.72,-59.1C586.71,-51.65 592.25,-30.89 594.26,-23.37"></path>
+</g>
+</g>
+</svg>
 </div>
-<p>Hash rate ماینرها باید در یک مسابقه شرکت کنند تا اعداد تصادفی رو ب تراکنش‌ها نسبت بدن و در مسابقه با ماینرهای دیگه برنده بشوند - بنابراین هر چقدر سریعتر بتوانند اینکار رو انجام بدن پاداش بیشتر می‌گیرند.</p>
-<p>برای داشتن سرعت بالا باید انرژی بیشتر مصرف کند یا تکنولوژی دیدتر استفاده کنه (اون عدد تصادفی hash هست hash rate اون عدد تصادفی در واحد زمان است.) بنابراین زمان زیاد میشه که ماینرها هزینه‌ی بیشتری و با سرعت بیشتر این اعداد رو پیدا کنند.</p>
-<p>در طول زمان hash rate از <span class="math inline">\(520 \frac{EH}{s}\)</span> در سال 2019 به <span class="math inline">\(1200 \frac{EH}{s}\)</span> رسیده. (<span class="math inline">\(E = 10^{18}\)</span>)</p>
-<p>در طول پنج سال عملکرد شبکه ۲۰ برابر بهتر شده.</p>
-<p>پس از نگاه بنیادی شاخص‌های سلامت شبکه اوکیه</p>
-<p>تعداد کاربر شبکه هم در طول زمان زیاد شده و به حدود یک میلیار نفر رسیده.</p>
-<div class="proof remark">
-<p><span class="proof-title"><em>نکته</em>. </span>شاخص‌های سلامت بیتکوین در وضعیت مطلوبی است و نوسان قیمتی ذات استارت‌ها است و ما به عنوان سرمایه گذار فاکتورهای سلامت شبکه رو بررسی میکنیم.</p>
+<p></p></figure><p></p>
 </div>
-</section>
-<section id="بخش-چهارم-اتریوم-بستری-توسعه-کسب-و-کار-یا-کامودیتی" class="level2">
-<h2 class="anchored" data-anchor-id="بخش-چهارم-اتریوم-بستری-توسعه-کسب-و-کار-یا-کامودیتی">بخش چهارم: اتریوم بستری توسعه کسب و کار یا کامودیتی</h2>
-<p>بستری برای خدمات Decenteralized Finance (Defi):</p>
+</div>
+</div>
+<p>خیلی از شبکه‌های موجود به صورت فدرال و سنترال مثل slik road است ولی شبکه‌های غیر متمرکز نیز وجود دارند مانند napster, emule, edunkey, torrent, bitcoin</p>
+<p>تفاوت عمده‌ی غیرمتمرکز این است که یک سرور مرکزی وجود ندارد که یک سیستم یا دولت نتونه دستکاری کنه.</p>
+<p>رمزنگاری یا Encryption:</p>
 <ul>
-<li>خدمات مالی غیر متمرکز (فروش سهام، ملک و …)</li>
-<li>اتریوم فقط ابزار انتقال پول نیست.</li>
-<li>اتریوم خدمات مالی رو با توکن سازی انجام میده</li>
-<li>سولانا هم همین کاربرد رو داره که smart contract نامیده میشه.
+<li>متقارن یا symmetric</li>
+<li>نامتقارن یا asymmetric</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../img/Symmetric-Encryption.png" class="img-fluid figure-img"></p>
+<figcaption>روش متقارن A</figcaption>
+</figure>
+</div>
 <ul>
-<li>امروزه سایت‌هایی مثل آمازون و گوگل و … از اتریوم استفاده می‌کنند.</li>
+<li>زمانی که میخواهیم یک فایل رو برای کسی بفرستم و خطر هک هک شدن وجود داره فایل رو رمز نگاری میکنیم و فایل و رمز رو از دو طریق مختلف میفرستیم تا احتمال هک شدن کم بشه و گیرنده با دسترسی به فلایل و رمز می‌تونه فایل رو باز کنه.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../img/Asymmetric-Encryption.png" class="img-fluid figure-img"></p>
+<figcaption>روش نامتقارن B</figcaption>
+</figure>
+</div>
+<p>در این روش از ۲ کلید private/public استفاده میشه و یک کلید اختصاصی ساخته میشه، یکم تئوریش گیج کنندس ولی جالبه (هنوز تسلطم زیاد نیست که راحت توضیح بدم)</p>
+<p>نفشه‌ی راه بیتکوین تا الان:</p>
+<ul>
+<li>2008:
+<ul>
+<li>whitepeper</li>
 </ul></li>
-<li>stable coin خودش به نوعی توکن سازی است یعنی به ازای هر usdt یک دلار آمریکا پستوانه داره.</li>
-</ul>
-</section>
-<section id="بخش-پنجم-رگولاتوری-توسعه-ابزارها-و-محافظت-از-سرمایه-عموم" class="level2">
-<h2 class="anchored" data-anchor-id="بخش-پنجم-رگولاتوری-توسعه-ابزارها-و-محافظت-از-سرمایه-عموم">بخش پنجم: رگولاتوری توسعه ابزارها و محافظت از سرمایه عموم</h2>
-<p>قوانین و مقررات در این حوزه بسیار مهم و جدیدا خیلی فعال شده و شرکت‌های بورسی مثل mara</p>
+<li>2010:
 <ul>
-<li><p>circle (ناشر usdc) strategy (خرید BTC)</p></li>
-<li><p>نکته‌ی مهم شرکت‌هایی که وارد بورس میشن فیلترهای مهمی رو رد کردند و این باعث اطمینان بیشتر به ما میده.</p></li>
-</ul>
-<p>مدیریت پرتفو:</p>
+<li>اولین تراکنش</li>
+</ul></li>
+<li>2011:
 <ul>
-<li>اضافه کردن تنها ۱ درصد به برتفو = افزایش بازدهی پرتفو از ۱۰ به ۱۲ درصد</li>
-<li>اضافه کردن تنها ۲.۵ درصد = افزایش بازدهی از ۱۰ به ۱۶ درصد</li>
-</ul>
-<p>درآمد در ایران:</p>
+<li>کپی برداری از بیتکوین - Altcoins</li>
+</ul></li>
+<li>2015:
 <ul>
-<li>ماینرها در حدود یک میلیارد دلار</li>
-<li>صرافی‌ها در حدود یک میلیارد دلار با بیست درصد کمتر بیشتر</li>
+<li>اتریم وارد می‌شود. (قراردادهای هوشمند را ارائه داد که زیرساخت تمام Defi/Nft امروزی است)</li>
+</ul></li>
+<li>2021:
+<ul>
+<li>تائید شدن ETFهای بیتکوین (باعث شد پول معنا داری وارد بازار بشه) که باعث شده مارکت کپ کریپتو در همین ۴ سال ۴ برابر بشه</li>
+</ul></li>
+<li>2024:
+<ul>
+<li>۱۰۰ هزار دلاری شدن بیتکوین</li>
+</ul></li>
 </ul>
-<p>مجموع دو میلیارد حداقل ۱.۵ میلیارد.</p>
-<p>به ازای درآمد صنعت میتونه یک ضریبی برای ارزش بازار صنعت بهش بدیم در کشورهای توسعه یافته در ۶ ضرب میشه و در ایران در ۲ ضرب میشه. بنابراین کف ارزش صنعت تقریبا ۳ میلیارد دلار میشه که تقریبا برابر با ارزش صنعت سیمان با ۸۰ سال قدمت میشه</p>
+<p>سئوالات کلیدی Hot Topics:</p>
+<p>به نظرت اتفاق بعدی که باعث بشه پول گنده‌ای وارد بازار بشه چی میتونه باشه؟</p>
+<ul>
+<li>بیت کوین روایت خودش رو کرده و نیاز به کار خاصی نیست</li>
+<li>بیتکوین = رزرو دارایی بازار</li>
+<li>اتریوم = رزرو فناوری بازار</li>
+</ul>
+<p>آیا اتریوم میتونه یه روزی به بیتکوین برسه؟ - فکر نمیکنه</p>
+<p>تناقض فلسفی -&gt; فلسفه کریپتو غیرمتمرکز بودن است اینکه ETF‌ها وارد شدن که زیر نظر دولت هستن، باعث تناقض نمیشه؟ برای تولید کننده (دارانده فناوری) مثل صاحب کارخانه خیلی فرق نمیکنه که قیمت دارایت چقدره، هم کاریه که داره انجام میشه و ارزش افزوده‌ای است کهداره خلق میشه برای خریدار هست که قیمت مهمه</p>
+<p>اگر یک نوسان شدید اتفاق بیفته، ETF‌ها بخوان دارائی‌هاشون رو بفروشن یک فشار فروش شدید به بازار میاد که میتونه باعث کرش شدن بازار بشه؟</p>
+<ul>
+<li>میتونه این اتفاق بیوفته ولی میتونه در جهت مثبت باشه که یک توجه وحشناک به بیتکوین اتفاق بیفته و کشورها ETFهای داخلی تشکیل بدن که مسلما این ETFها سراغ خرید BTC و ETH میرن.</li>
+</ul>
+<p>برای بیتکوین مهم نیست قیمتش چقدر باشه مهم اینه درست ؟؟؟ کنه</p>
+<p>اینکه میگی بیتکوین رزرو ارزش است یعنی چی؟</p>
+<p>بیتکوین پشتوانه اصلی بازار کریپتو است و مثل طلا بعنوان رزرو ارزش باهاش ؟؟؟ میکینم.</p>
+<p>ما چرا طلا میگیریم؟ چون پشتوانه‌ی پول کاغذی بود و‌؟؟؟؟</p>
+<p>در ۲۰ سال آینده چند بلاکچین مثل بیتکوین داریم؟</p>
+<p>چندتا سیستم مستقل نخواهیم داشت عملا سیستم‌های یکپارچه بوجود میاد مثلا شماره حساب بانکی به شماره حساب بلاکچین میشه.</p>
+<p>لایه ۲ btc/eth ارزش پایین‌تری نسبت به layer1 دارند آیا به اون ارزش لایه 1 میرسند؟</p>
+<p>لایه 2 مثل رم (دسترسی سریع‌تر) لایه ۱ مثل هارد (گرون‌تر). لایه ۱ درمثال مثل دست نوشته‌های روزانس که اگر گم هم بشه اتفاق خاصی نمیوفته</p>
+<p>آیا بیتکوین همچنان در فاز استارتاپی قرار داره؟</p>
+<ul>
+<li>بازار کریپتو و btc از نظر کاربری که داره ارائه میده هنوز رشد بزرگی دیگه‌ای خواهد داشت.</li>
+</ul>
+<p>آیا بوسیله‌ی کامپیوترهای کوانتومی، کریپتو تحت فشار قرار بگیره؟</p>
+<p>نه کامپیوترهای کوانتومی ابزاری برای محاسبات سریع تر هستند اتفاقا میتونند باعث محاسبات سریعتر و کارآمدترشدن شبکه‌ی رمزارز بشوند.</p>
+<p>آیا ممکنه یک پلتفرم دیگه بیاد و جای btc رو بگیره؟</p>
+<ul>
+<li>من چرا باید به یک سیستم که الان داره کار میکنه و تئوری درستی داره بدبین باشم و از اون استفاده نکنم چون یه روزی ممکنه یک سیستم جدید بیاد و جاشو بگیره!</li>
+</ul>
+<p>میزان هک که در شبکه Defi اتفاق میفته زیاده چرا؟</p>
+<ul>
+<li>حواسمون به خبری که میگیریم باشه که از چه ؟؟؟ است در کل میزان هک درصد خیلی کمی از ارزش بازار کریپتو است و این خود خبرها کار اون دسته از خبرگزاری‌هاست که طرفدار centrelize شدن بازارها هستند.</li>
+</ul>
+<p>آینده stablecoinها متمرکز نسبت به غیر متمرکز؟</p>
+<ul>
+<li>فیات: هرکسی میتونه پول چاپ کنه</li>
+<li>DAI: به شخصه با معماریش حال میکنم و خلاقانه بوده ولی با کاربردش حال نمیکنم.</li>
+<li>جذابیت stablecoin‌ها اینه که در بستر بلاکچین اومده پول فیات قابل جابجایی داده</li>
+</ul>
+<p>ریسک‌های رایج در صرافی - ولت - بلاکچین چی هست که باید بهش توجه کنیم؟</p>
+<ul>
+<li>ریسک رگولاتوری مهمترین ریسک بازاره، مثلا فردا ترامپ بگه هرکی بیتکوین داره میندازه زندون بیتکوین فردا ریزش میکنه دیگه</li>
+<li>تکنولوژی هست - هیچ تغییری نکرده ولی قیمت بیتکوین نابود شده</li>
+</ul>
+<p>دارایی رمز ارز رو به دو صورت میشه نگه داشت.</p>
+<ol type="1">
+<li>شخصا: ریسک فقط دانش و فناوری شما است. میتونی ۱۲ تا کلمه حفظ باشی و کلی دارایی داشته باشی در این نحوه در کیف پول شخصی خودت نگه میداری</li>
+<li>نیابتی: ریسک رابطه‌ی من با طرف اصلی (صرافی) است اینکه صرافی چقدر منو قبول داره (احراز هویت)</li>
+</ol>
+<p>هر کوین توکن که میخریم داره به یه استارتاپی/شرکتی/پول میبره (مثلا اگر ۱۰۰۰ دلار کاردانو میخری مثل خرید ۱۰۰۰ دلار سهم ایرانخودرو است) فرقش اینه که مدیر عامل ایرانخودرو با این پول هر کاری نمیتونه بکنه ولی در کریپتو دست بازتری داره میتونه کارهای بیشتری کنه.</p>
+<p>این سرمایه گذاری روی شرکتها/پروژه‌ها میتونه برای شرکتها و پروژه‌های ایرانی هم اتفاق بیفته که کار خوبیه.</p>
+<p>کوین: مال اصل شبکه. توکن: اگر رو شبکه چاپ شده باشه.</p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1138,13 +1284,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../intro.html" class="pagination-link" aria-label="مقدمه">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">مقدمه</span>
+      <a href="../sessions/01.html" class="pagination-link" aria-label="جلسه اول: نگاه سرمایه گذاری صنعت کریپتو">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">جلسه اول: نگاه سرمایه گذاری صنعت کریپتو</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../sessions/02.html" class="pagination-link" aria-label="جلسه دوم: مبانی فنی بلاکچین">
-        <span class="nav-page-text"><span class="chapter-title">جلسه دوم: مبانی فنی بلاکچین</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../references.html" class="pagination-link" aria-label="منابع">
+        <span class="nav-page-text">منابع</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
